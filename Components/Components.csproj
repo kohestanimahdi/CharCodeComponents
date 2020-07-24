@@ -48,6 +48,12 @@
     <Compile Include="CharCodeCheckBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="CharCodeComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CharCodeLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Forms\Loading_Gif.cs">
       <SubType>Form</SubType>
     </Compile>

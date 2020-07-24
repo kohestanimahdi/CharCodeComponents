@@ -1,4 +1,4 @@
-﻿namespace IR.UI.Forms
+﻿namespace Components.Forms
 {
     partial class UMessageBox
     {
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new MyComponent.Lbl();
+            this.label1 = new CharCodeLabel();
             this.PicAlert = new System.Windows.Forms.PictureBox();
             this.BtnAccept = new System.Windows.Forms.Button();
             this.BtnCancel = new System.Windows.Forms.Button();
@@ -48,7 +48,7 @@
             // 
             // PicAlert
             // 
-            this.PicAlert.Image = global::IR.UI.Properties.Resources.no_success_icon3;
+            this.PicAlert.Image = global::Components.Properties.Resources.no_success_icon3;
             this.PicAlert.Location = new System.Drawing.Point(360, 4);
             this.PicAlert.Name = "PicAlert";
             this.PicAlert.Size = new System.Drawing.Size(46, 42);
@@ -121,7 +121,7 @@
         }
 
         #endregion
-        private MyComponent.Lbl label1;
+        private CharCodeLabel label1;
         private System.Windows.Forms.PictureBox PicAlert;
         private System.Windows.Forms.Button BtnAccept;
         private System.Windows.Forms.Button BtnCancel;

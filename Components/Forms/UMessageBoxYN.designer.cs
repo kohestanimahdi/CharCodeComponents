@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new MyComponent.Lbl();
-            this.lblCheck = new MyComponent.Chbx();
+            this.label1 = new CharCodeLabel();
+            this.lblCheck = new CharCodeCheckBox();
             this.BtnYes = new CharCodeButton();
             this.BtnCancel = new CharCodeButton();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -158,8 +158,8 @@
 
         private CharCodeButton BtnCancel;
         private CharCodeButton BtnYes;
-        private MyComponent.Lbl label1;
-        private MyComponent.Chbx lblCheck;
+        private CharCodeLabel label1;
+        private CharCodeCheckBox lblCheck;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
     }

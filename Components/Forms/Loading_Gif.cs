@@ -1,5 +1,4 @@
-﻿using IR.UI.Common;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace IR.UI.Forms
+namespace Components.Forms
 {
     public partial class Loading_Gif : Form
     {
@@ -25,7 +24,7 @@ namespace IR.UI.Forms
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (!ApplicationHelpers.FLGLoging)
+            //if (!ApplicationHelpers.FLGLoging)
             {
 
                 timer1.Stop();

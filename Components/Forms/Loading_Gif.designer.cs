@@ -1,4 +1,4 @@
-﻿namespace IR.UI.Forms
+﻿namespace Components.Forms
 {
     partial class Loading_Gif
     {
@@ -41,7 +41,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::IR.UI.Properties.Resources.Gif_SP4;
+            this.pictureBox1.Image = global::Components.Properties.Resources.Gif_SP4;
             this.pictureBox1.Location = new System.Drawing.Point(-6, -1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(292, 115);

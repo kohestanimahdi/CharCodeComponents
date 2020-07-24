@@ -1,17 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
-namespace IR.UI.Forms
+namespace Components.Forms
 {
+    public enum MessageBoxType
+    {
+        Message = 0,
+        Success = 1,
+        Error = 2,
+        Warning = 3
+    }
     public partial class UMessageBox : Form
     {
-        public UMessageBox(string label,int State_Msg)
+        public UMessageBox(string label, MessageBoxType State_Msg)
         {
             InitializeComponent();
             label1.Text = label;
@@ -20,27 +22,27 @@ namespace IR.UI.Forms
             //label1.Location = new Point((this.Width - 177) - (label1.Size.Width / 2), 15);
         }
 
-        int State_Msg2 = 0;
+        MessageBoxType State_Msg2 = MessageBoxType.Message;
 
         private void UMessageBox_Load(object sender, EventArgs e)
         {
             label1.TextAlign = ContentAlignment.TopLeft;
-            if (State_Msg2 == 2)
+            if (State_Msg2 == MessageBoxType.Error)
             {
          
                 PanelSym.BackColor = Color.FromArgb(211, 29, 2);
                 BtnAccept.Visible = false;
                 BtnCancel.Visible = true;
                 PicAlert.Visible = true;
-                PicAlert.Image = IR.UI.Properties.Resources.no_success_icon3;
+                PicAlert.Image = Properties.Resources.no_success_icon3;
             }
-            else
+            else if (State_Msg2 == MessageBoxType.Success)
             {
                 PanelSym.BackColor = Color.FromArgb(65, 173, 73);
                 BtnCancel.Visible = false;
                 BtnAccept.Visible = true;
                 PicAlert.Visible = true;
-                PicAlert.Image = IR.UI.Properties.Resources.Tick_Mark_Dark_512;
+                PicAlert.Image = Properties.Resources.Tick_Mark_Dark_512;
             }
         }
 
