@@ -21,6 +21,7 @@ namespace Components
 		{
 			this.Font = new Font("Behnam", 11f, FontStyle.Regular, GraphicsUnit.Point, 178);
 			this.TextAlign = ContentAlignment.MiddleRight;
+			this.AutoSize = false;
 		}
 
 		public CharCodeLabel()

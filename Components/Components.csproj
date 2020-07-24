@@ -51,7 +51,25 @@
     <Compile Include="CharCodeComboBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="CharCodeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharCodeForm.Designer.cs">
+      <DependentUpon>CharCodeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CharCodeGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="CharCodeLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CharCodeNumberTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CharCodeRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CharCodeTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Forms\Loading_Gif.cs">
@@ -95,22 +113,22 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\delete2.png" />
+    <EmbeddedResource Include="Resources\delete2.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Gif_SP4.gif" />
+    <EmbeddedResource Include="Resources\Gif_SP4.gif" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\no-success-icon3.png" />
+    <EmbeddedResource Include="Resources\no-success-icon3.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Qus_P3.png" />
+    <EmbeddedResource Include="Resources\Qus_P3.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Tick_Mark_Dark-512.png" />
+    <EmbeddedResource Include="Resources\Tick_Mark_Dark-512.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\tik3.png" />
+    <EmbeddedResource Include="Resources\tik3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
