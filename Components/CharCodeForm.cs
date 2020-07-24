@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace Components
+namespace CharCodeComponents
 {
     public partial class CharCodeForm : Form
     {

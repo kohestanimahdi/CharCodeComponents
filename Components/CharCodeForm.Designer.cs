@@ -1,4 +1,4 @@
-﻿namespace Components
+﻿namespace CharCodeComponents
 {
     partial class CharCodeForm
     {

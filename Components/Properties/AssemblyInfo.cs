@@ -5,10 +5,10 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Components")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("CharCodeComponents")]
+[assembly: AssemblyDescription("Beautiful persian components for windows form applications")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("CharCode")]
 [assembly: AssemblyProduct("Components")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]

@@ -1,4 +1,4 @@
-﻿namespace Components.Forms
+﻿namespace CharCodeComponents.Forms
 {
     partial class UMessageBoxYN
     {
@@ -71,7 +71,7 @@
             this.BtnYes.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.BtnYes.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtnYes.Font = new System.Drawing.Font("IRANSans Light", 11F);
-            this.BtnYes.Image = global::Components.Properties.Resources.tik3;
+            this.BtnYes.Image = global::CharCodeComponents.Properties.Resources.tik3;
             this.BtnYes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnYes.Location = new System.Drawing.Point(252, 66);
             this.BtnYes.Name = "BtnYes";
@@ -94,7 +94,7 @@
             this.BtnCancel.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.BtnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtnCancel.Font = new System.Drawing.Font("IRANSans Light", 11F);
-            this.BtnCancel.Image = global::Components.Properties.Resources.delete2;
+            this.BtnCancel.Image = global::CharCodeComponents.Properties.Resources.delete2;
             this.BtnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnCancel.Location = new System.Drawing.Point(145, 66);
             this.BtnCancel.Name = "BtnCancel";
@@ -124,7 +124,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Components.Properties.Resources.Qus_P3;
+            this.pictureBox1.Image = global::CharCodeComponents.Properties.Resources.Qus_P3;
             this.pictureBox1.Location = new System.Drawing.Point(437, 7);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(41, 38);

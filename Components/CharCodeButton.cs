@@ -3,7 +3,7 @@ using System.Drawing;
 using System.Media;
 using System.Windows.Forms;
 
-namespace Components
+namespace CharCodeComponents
 {
     class CharCodeButton: Button
     {

@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Components.Forms
+namespace CharCodeComponents.Forms
 {
     public enum MessageBoxType
     {

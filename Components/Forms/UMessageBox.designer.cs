@@ -1,4 +1,4 @@
-﻿namespace Components.Forms
+﻿namespace CharCodeComponents.Forms
 {
     partial class UMessageBox
     {
@@ -48,7 +48,7 @@
             // 
             // PicAlert
             // 
-            this.PicAlert.Image = global::Components.Properties.Resources.no_success_icon3;
+            this.PicAlert.Image = global::CharCodeComponents.Properties.Resources.no_success_icon3;
             this.PicAlert.Location = new System.Drawing.Point(360, 4);
             this.PicAlert.Name = "PicAlert";
             this.PicAlert.Size = new System.Drawing.Size(46, 42);
