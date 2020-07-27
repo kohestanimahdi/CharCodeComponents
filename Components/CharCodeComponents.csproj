@@ -130,5 +130,8 @@
   <ItemGroup>
     <EmbeddedResource Include="Resources\tik3.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tick_Org.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

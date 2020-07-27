@@ -31,32 +31,37 @@ namespace CharCodeComponents.Forms
             {
          
                 PanelSym.BackColor = Color.FromArgb(211, 29, 2);
-                BtnAccept.Visible = false;
-                BtnCancel.Visible = true;
-                PicAlert.Visible = true;
+                buttonOk.BackColor = Color.FromArgb(211, 29, 2);
                 PicAlert.Image = Properties.Resources.no_success_icon3;
             }
             else if (State_Msg2 == MessageBoxType.Success)
             {
                 PanelSym.BackColor = Color.FromArgb(65, 173, 73);
-                BtnCancel.Visible = false;
-                BtnAccept.Visible = true;
-                PicAlert.Visible = true;
+                buttonOk.BackColor = Color.FromArgb(65, 173, 73);
                 PicAlert.Image = Properties.Resources.Tick_Mark_Dark_512;
             }
+            else if (State_Msg2 == MessageBoxType.Message)
+            {
+                PicAlert.Visible = false;
+            }
+            else if (State_Msg2 == MessageBoxType.Warning)
+            {
+                PanelSym.BackColor = Color.FromArgb(255, 105, 0);
+                buttonOk.BackColor = Color.FromArgb(255, 105, 0);
+                PicAlert.Image = Properties.Resources.Tick_Org;
+            }
         }
-
-        private void BtnCancel_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void UMessageBox_KeyDown(object sender, KeyEventArgs e)
         {
             if(e.KeyCode==Keys.Escape)
             {
                 this.Close();
             }
+        }
+
+        private void buttonOk_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

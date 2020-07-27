@@ -113,6 +113,16 @@ namespace CharCodeComponents.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Tick_Org {
+            get {
+                object obj = ResourceManager.GetObject("Tick_Org", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap tik3 {
             get {
                 object obj = ResourceManager.GetObject("tik3", resourceCulture);

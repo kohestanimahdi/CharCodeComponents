@@ -28,10 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new CharCodeLabel();
-            this.lblCheck = new CharCodeCheckBox();
-            this.BtnYes = new CharCodeButton();
-            this.BtnCancel = new CharCodeButton();
+            this.label1 = new CharCodeComponents.CharCodeLabel();
+            this.BtnYes = new CharCodeComponents.CharCodeButton();
+            this.BtnCancel = new CharCodeComponents.CharCodeButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
@@ -45,23 +44,9 @@
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label1.settingChange = true;
-            this.label1.Size = new System.Drawing.Size(422, 38);
+            this.label1.Size = new System.Drawing.Size(448, 74);
             this.label1.TabIndex = 3;
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lblCheck
-            // 
-            this.lblCheck.Font = new System.Drawing.Font("Behnam", 11.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lblCheck.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(29)))), ((int)(((byte)(2)))));
-            this.lblCheck.Location = new System.Drawing.Point(12, 9);
-            this.lblCheck.Name = "lblCheck";
-            this.lblCheck.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblCheck.settingChange = true;
-            this.lblCheck.Size = new System.Drawing.Size(416, 36);
-            this.lblCheck.TabIndex = 0;
-            this.lblCheck.UseVisualStyleBackColor = true;
-            this.lblCheck.CheckedChanged += new System.EventHandler(this.lblCheck_CheckedChanged);
-            this.lblCheck.KeyDown += new System.Windows.Forms.KeyEventHandler(this.lblCheck_KeyDown);
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // BtnYes
             // 
@@ -73,7 +58,7 @@
             this.BtnYes.Font = new System.Drawing.Font("IRANSans Light", 11F);
             this.BtnYes.Image = global::CharCodeComponents.Properties.Resources.tik3;
             this.BtnYes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnYes.Location = new System.Drawing.Point(252, 66);
+            this.BtnYes.Location = new System.Drawing.Point(263, 89);
             this.BtnYes.Name = "BtnYes";
             this.BtnYes.PaintCurves = false;
             this.BtnYes.PaintNo = false;
@@ -96,7 +81,7 @@
             this.BtnCancel.Font = new System.Drawing.Font("IRANSans Light", 11F);
             this.BtnCancel.Image = global::CharCodeComponents.Properties.Resources.delete2;
             this.BtnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnCancel.Location = new System.Drawing.Point(145, 66);
+            this.BtnCancel.Location = new System.Drawing.Point(156, 89);
             this.BtnCancel.Name = "BtnCancel";
             this.BtnCancel.PaintCurves = false;
             this.BtnCancel.PaintNo = false;
@@ -113,19 +98,19 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.lblCheck);
-            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.BtnYes);
             this.panel1.Controls.Add(this.BtnCancel);
-            this.panel1.Location = new System.Drawing.Point(6, 5);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(7, 7);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(487, 120);
+            this.panel1.Size = new System.Drawing.Size(514, 134);
             this.panel1.TabIndex = 4;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::CharCodeComponents.Properties.Resources.Qus_P3;
-            this.pictureBox1.Location = new System.Drawing.Point(437, 7);
+            this.pictureBox1.Location = new System.Drawing.Point(465, 7);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(41, 38);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -137,12 +122,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(500, 130);
+            this.ClientSize = new System.Drawing.Size(528, 148);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("B Koodak", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "UMessageBoxYN";
+            this.Padding = new System.Windows.Forms.Padding(7);
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -159,7 +145,6 @@
         private CharCodeButton BtnCancel;
         private CharCodeButton BtnYes;
         private CharCodeLabel label1;
-        private CharCodeCheckBox lblCheck;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
