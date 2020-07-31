@@ -66,6 +66,12 @@
     <Compile Include="CharCodeNumberTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="CharCodePasswordTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CharCodePasswordTextBox.Designer.cs">
+      <DependentUpon>CharCodePasswordTextBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="CharCodeRadioButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CharCodePasswordTextBox.resx">
+      <DependentUpon>CharCodePasswordTextBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Loading_Gif.resx">
       <DependentUpon>Loading_Gif.cs</DependentUpon>
     </EmbeddedResource>
@@ -132,6 +141,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Tick_Org.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hidden-and-invisible-.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -8,10 +8,10 @@
     <owners>$author$</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
-
+    <projectUrl>https://github.com/kohestanimahdi/CharCodeComponents</projectUrl>
     <description>$description$</description>
-    <releaseNotes>Release first version</releaseNotes>
+    <releaseNotes>Edit Message bok and add new types</releaseNotes>
     <copyright>Copyright 2020</copyright>
-    <tags>component windowsform</tags>
+    <tags>component windowsform persian beautiful</tags>
   </metadata>
 </package>

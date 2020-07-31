@@ -4,16 +4,10 @@ using System.Windows.Forms;
 
 namespace CharCodeComponents.Forms
 {
-    public enum MessageBoxType
-    {
-        Message = 0,
-        Success = 1,
-        Error = 2,
-        Warning = 3
-    }
+
     public partial class UMessageBox : Form
     {
-        public UMessageBox(string label, MessageBoxType State_Msg)
+        public UMessageBox(string label, MessageBoxIcon State_Msg)
         {
             InitializeComponent();
             label1.Text = label;
@@ -22,29 +16,29 @@ namespace CharCodeComponents.Forms
             //label1.Location = new Point((this.Width - 177) - (label1.Size.Width / 2), 15);
         }
 
-        MessageBoxType State_Msg2 = MessageBoxType.Message;
+        MessageBoxIcon State_Msg2 = MessageBoxIcon.None;
 
         private void UMessageBox_Load(object sender, EventArgs e)
         {
             label1.TextAlign = ContentAlignment.TopLeft;
-            if (State_Msg2 == MessageBoxType.Error)
+            if (State_Msg2 == MessageBoxIcon.Error)
             {
          
                 PanelSym.BackColor = Color.FromArgb(211, 29, 2);
                 buttonOk.BackColor = Color.FromArgb(211, 29, 2);
                 PicAlert.Image = Properties.Resources.no_success_icon3;
             }
-            else if (State_Msg2 == MessageBoxType.Success)
+            else if (State_Msg2 == MessageBoxIcon.Information)
             {
                 PanelSym.BackColor = Color.FromArgb(65, 173, 73);
                 buttonOk.BackColor = Color.FromArgb(65, 173, 73);
                 PicAlert.Image = Properties.Resources.Tick_Mark_Dark_512;
             }
-            else if (State_Msg2 == MessageBoxType.Message)
+            else if (State_Msg2 == MessageBoxIcon.None)
             {
                 PicAlert.Visible = false;
             }
-            else if (State_Msg2 == MessageBoxType.Warning)
+            else if (State_Msg2 == MessageBoxIcon.Warning)
             {
                 PanelSym.BackColor = Color.FromArgb(255, 105, 0);
                 buttonOk.BackColor = Color.FromArgb(255, 105, 0);

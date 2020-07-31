@@ -83,6 +83,16 @@ namespace CharCodeComponents.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap hidden_and_invisible_ {
+            get {
+                object obj = ResourceManager.GetObject("hidden-and-invisible-", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap no_success_icon3 {
             get {
                 object obj = ResourceManager.GetObject("no_success_icon3", resourceCulture);
